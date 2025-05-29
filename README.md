@@ -2,7 +2,7 @@
 
 A **React-based** movie ranking and listing web application, showcasing dynamic movie posters, search functionality, and a responsive UI.
 
-![App Banner](./public/hero.png) <!-- You can replace this with a real screenshot -->
+![App Banner](./public/hero.png) <!-- Optional static image for banner -->
 
 ## 🚀 Features
 
@@ -24,10 +24,11 @@ A **React-based** movie ranking and listing web application, showcasing dynamic 
 
 ```
 first-react/
-├── public/              # Static assets (images, icons)
+├── public/              # Static assets (images, icons, GIF)
 │   ├── hero-bg.png
 │   ├── hero.png
 │   ├── logo.png
+│   ├── demo.gif         # Add your animated GIF here
 │   └── ...  
 ├── src/
 │   ├── assets/          # Additional SVGs and graphics
@@ -49,11 +50,13 @@ first-react/
 └── README.md
 ```
 
-## 📸 Screenshots
+## 🎥 Demo GIF
 
-| Home View                  | 
-| --------------------------  
-| ![Home](./public/hero.png) | 
+Here’s a preview of the application in action:
+
+![Demo Preview](./public/demo.gif)
+
+> 🎞️ Replace `./public/demo.gif` with the actual path to your GIF file in the `public` directory.
 
 ## 🏗️ Setup & Installation
 
