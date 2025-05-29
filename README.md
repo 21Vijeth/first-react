@@ -51,9 +51,9 @@ first-react/
 
 ## 📸 Screenshots
 
-| Home View                  | Search Functionality           | Spinner View                  |                                        |
-| -------------------------- | ------------------------------ | ----------------------------- | -------------------------------------- |
-| ![Home](./public/hero.png) | ![Search](./public/search.svg) | ![Spinner](./public/star.svg) | <!-- Replace with real screenshots --> |
+| Home View                  | 
+| --------------------------  
+| ![Home](./public/hero.png) | 
 
 ## 🏗️ Setup & Installation
 
