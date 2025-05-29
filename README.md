@@ -54,9 +54,8 @@ first-react/
 
 Here’s a preview of the application in action:
 
-![Demo Preview](./public/demo.gif)
+![Demo Preview](./public/project.gif)
 
-> 🎞️ Replace `./public/demo.gif` with the actual path to your GIF file in the `public` directory.
 
 ## 🏗️ Setup & Installation
 
@@ -81,15 +80,7 @@ Visit `http://localhost:5173` in your browser.
 * 🎥 **Trailer Popups** — Show trailers when clicking on a movie card.
 * 📈 **Pagination/Infinite Scroll** — Efficient handling of large datasets.
 
-## 🔗 Live Demo
-
-> Coming soon… *(Or replace with your Netlify/Vercel deployment link)*
-
 ## 🙋‍♂️ Author
 
 **Vijeth**
 GitHub: [@21Vijeth](https://github.com/21Vijeth)
-
-## 📄 License
-
-This project is licensed under the MIT License.
