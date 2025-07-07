@@ -32,8 +32,10 @@ jobs:
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v3
         with:
-          publish-dir: ./dist
-          production: true
+           publish-dir: ./dist
+           production: true
+           alias: production  # ✅ This marks it as a production deployment
+           deploy-message: "Auto deploy from GitHub Actions"  # Optional but useful
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
