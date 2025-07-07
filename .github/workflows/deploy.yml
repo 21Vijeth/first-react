@@ -21,7 +21,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build the project
+      - name: Build project
         run: npm run build
         env:
           VITE_APPWRITE_PROJECT_ID: ${{ secrets.VITE_APPWRITE_PROJECT_ID }}
@@ -29,13 +29,11 @@ jobs:
           VITE_APPWRITE_COLLECTION_ID: ${{ secrets.VITE_APPWRITE_COLLECTION_ID }}
           VITE_TMDB_API_KEY: ${{ secrets.VITE_TMDB_API_KEY }}
 
-      - name: Deploy to Netlify
-        uses: nwtgck/actions-netlify@v3
-        with:
-           publish-dir: ./dist
-           production: true
-           alias: production  # ✅ This marks it as a production deployment
-           deploy-message: "Auto deploy from GitHub Actions"  # Optional but useful
+      - name: Install Netlify CLI
+        run: npm install -g netlify-cli
+
+      - name: Deploy to Netlify (Production)
+        run: netlify deploy --dir=dist --prod --site=$NETLIFY_SITE_ID
         env:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
